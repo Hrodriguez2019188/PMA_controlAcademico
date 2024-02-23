@@ -1,0 +1,108 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Usuarios",
+    "dateExported": "2024-02-15T22:40:25.030Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "032127ed-b077-4dfa-aeae-7ff8a0a12584",
+            "colId": "6aa3877b-b7e0-448e-a396-b26748168104",
+            "containerId": "",
+            "name": "usuariosPost",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-12T20:56:22.496Z",
+            "modified": "2024-02-13T02:41:10.702Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"maestro\",\n  \"correo\":\"maestro@email.com\",\n  \"password\":\"123456\",\n  \"role\":\"TEACHER_ROLE\"\n  \\para asignar un estudiante solo se quita el atributo role}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bf87c2ab-d3e7-4678-aae3-336a39a7bbc5",
+            "colId": "6aa3877b-b7e0-448e-a396-b26748168104",
+            "containerId": "",
+            "name": "usuariosGet",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-12T20:56:22.497Z",
+            "modified": "2024-02-12T20:56:22.497Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "88625003-7869-4e67-bab9-69437556937b",
+            "colId": "6aa3877b-b7e0-448e-a396-b26748168104",
+            "containerId": "",
+            "name": "getUsuarioById",
+            "url": "http://localhost:3000/api/usuarios/65cac4a93f69f860c25d361e",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-12T20:56:22.498Z",
+            "modified": "2024-02-13T02:40:06.491Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "91fd7d01-4e8d-4341-9c6c-a6c22454f25d",
+            "colId": "6aa3877b-b7e0-448e-a396-b26748168104",
+            "containerId": "",
+            "name": "usuariosPut",
+            "url": "http://localhost:3000/api/usuarios/65cac4a93f69f860c25d361e",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-12T20:56:22.499Z",
+            "modified": "2024-02-13T02:40:20.787Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Maestro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae135c3b-2fa1-45a7-bac3-91bba1478d74",
+            "colId": "6aa3877b-b7e0-448e-a396-b26748168104",
+            "containerId": "",
+            "name": "usuarioDelete",
+            "url": "http://localhost:3000/api/usuarios/65cac4a93f69f860c25d361e",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-12T20:56:22.501Z",
+            "modified": "2024-02-13T02:40:31.158Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f8a4586b-6e99-416f-b2ff-3d4893265685",
+            "colId": "6aa3877b-b7e0-448e-a396-b26748168104",
+            "containerId": "",
+            "name": "usuarioLogin",
+            "url": "http://localhost:3000/api/usuarios/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-12T20:56:43.158Z",
+            "modified": "2024-02-13T02:43:18.556Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"maestro@email.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

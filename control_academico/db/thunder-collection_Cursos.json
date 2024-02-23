@@ -1,0 +1,94 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Cursos",
+    "dateExported": "2024-02-15T22:40:52.232Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9ed7b967-5f8e-48fb-89d9-d7bec072067b",
+            "colId": "054396db-cd97-4823-96d9-fcd6eaa61201",
+            "containerId": "",
+            "name": "cursosGet",
+            "url": "http://localhost:3000/api/cursos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-12T22:40:54.518Z",
+            "modified": "2024-02-13T02:35:48.701Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "58030673-40b0-47a4-8bd9-dbec2bbd588a",
+            "colId": "054396db-cd97-4823-96d9-fcd6eaa61201",
+            "containerId": "",
+            "name": "cursosPost",
+            "url": "http://localhost:3000/api/cursos",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-12T22:40:54.520Z",
+            "modified": "2024-02-15T22:16:52.408Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Quimica\",\n  \"categoria\":\"ciencias\",\n  \"maestro\":\"maestro@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "af33d2ec-b065-4d9f-91b9-6d96f96b40f9",
+            "colId": "054396db-cd97-4823-96d9-fcd6eaa61201",
+            "containerId": "",
+            "name": "getCursosById",
+            "url": "http://localhost:3000/api/cursos/65cac931b8b6faca45e9fdb8",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-12T22:40:54.521Z",
+            "modified": "2024-02-13T02:36:14.337Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5fa4fe8c-0515-49d7-b079-b0014ad4147c",
+            "colId": "054396db-cd97-4823-96d9-fcd6eaa61201",
+            "containerId": "",
+            "name": "cursosPut",
+            "url": "http://localhost:3000/api/cursos/65cac931b8b6faca45e9fdb8",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-12T22:40:54.522Z",
+            "modified": "2024-02-13T02:39:11.218Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Matematica\",\n  \"maestro\":\"65cac4a93f69f860c25d361e\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f79c6591-e313-47a0-98a7-b5efdcb2b74a",
+            "colId": "054396db-cd97-4823-96d9-fcd6eaa61201",
+            "containerId": "",
+            "name": "cursoDelete",
+            "url": "http://localhost:3000/api/cursos/65ce8b913d155418f37fcdd3",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-02-12T22:40:54.523Z",
+            "modified": "2024-02-15T22:35:39.471Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"maestro\":\"65ce727d087bd357d67c79b0\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
