@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Estudiantes en cursos",
+    "dateExported": "2024-02-15T22:41:21.290Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6c90c26f-4856-4f92-9470-dad2be9e8dc7",
+            "colId": "769a4c70-2122-482a-ac00-9a8d70a192a7",
+            "containerId": "",
+            "name": "Asignar estudiante a curso",
+            "url": "http://localhost:3000/api/Asigancion_estudiantes",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-13T02:45:55.390Z",
+            "modified": "2024-02-15T22:35:15.636Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"student@email.com\",\n  \"materia\":\"Biologia\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7b06a3cd-209b-46cd-9f74-d2e3b2dc00ae",
+            "colId": "769a4c70-2122-482a-ac00-9a8d70a192a7",
+            "containerId": "",
+            "name": "Expulsar estudiante de curso",
+            "url": "http://localhost:3000/api/Asigancion_estudiantes/65ce77ab87c1b9bc24e35190",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-02-15T20:37:29.057Z",
+            "modified": "2024-02-15T20:45:16.647Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f3a87cb7-34ce-494e-963c-538cf0a7c230",
+            "colId": "769a4c70-2122-482a-ac00-9a8d70a192a7",
+            "containerId": "",
+            "name": "Get usuariosHasCursos",
+            "url": "http://localhost:3000/api/Asigancion_estudiantes",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-15T20:39:29.214Z",
+            "modified": "2024-02-15T20:39:40.552Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c47ba91a-ba43-409b-ae0d-4836056bd08b",
+            "colId": "769a4c70-2122-482a-ac00-9a8d70a192a7",
+            "containerId": "",
+            "name": "Cursos por estudiante",
+            "url": "http://localhost:3000/api/Asigancion_estudiantes/buscar",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-02-15T20:47:06.433Z",
+            "modified": "2024-02-15T21:22:25.008Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"student@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
