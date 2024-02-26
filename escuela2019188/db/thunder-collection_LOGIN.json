@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "LOGIN",
+    "dateExported": "2024-02-25T22:04:04.042Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "eea294b3-6b3a-4751-869d-89d920ee22cb",
+            "colId": "56eee234-1fe0-42b9-9c9b-4f0dbd1d3e77",
+            "containerId": "",
+            "name": "Loguearse",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-25T20:58:55.839Z",
+            "modified": "2024-02-25T21:31:39.151Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"mapache@kinal.edu.gt\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d296a469-687f-4442-bea7-e76c70716d8c",
+            "colId": "56eee234-1fe0-42b9-9c9b-4f0dbd1d3e77",
+            "containerId": "",
+            "name": "Registrarse",
+            "url": "http://localhost:3000/api/auth/registrarse",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-25T20:58:55.841Z",
+            "modified": "2024-02-25T22:03:08.747Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameUser\": \"mapache\",\n  \"email\": \"mapache@kinal.edu.gt\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
