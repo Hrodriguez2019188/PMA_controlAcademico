@@ -2,39 +2,8 @@ const { response } = require('express');
 const bcryptjs = require('bcryptjs');
 const User = require('../models/user');
 
-const userDelete = async (req, res) => {
-    try {
-        const { id } = req.params;
-        const usuario = await User.findById(id);
 
-        if (!usuario) {
-            return res.status(400).json({
-                msg: 'Usuario no existe'
-            });
-        }
 
-        // Verificar si el usuario tiene permiso y si es el mismo usuario
-        const usuarioAutenticado = req.usuario;
-        if (usuarioAutenticado._id !== id || usuarioAutenticado.role !== 'STUDENT_ROLE') {
-            return res.status(403).json({
-                msg: 'No tienes permiso para eliminar este perfil'
-            });
-        }
-
-        usuario.estado = false;
-        await usuario.save();
-
-        res.status(200).json({
-            msg: 'Perfil a.ctualizado correctamente',
-            usuario
-        });
-    } catch (error) {
-        console.error(error);
-        res.status(500).json({
-            msg: 'Hable con el administrador'
-        });
-    }
-}
 const userPut = async (req, res) => {
     try {
         const { id } = req.params;
@@ -49,8 +18,6 @@ const userPut = async (req, res) => {
                 msg: 'No tienes permiso para actualizar este usuario',
             });
         }
-
-        // Buscar y actualizar el usuario
         const usuario = await User.findByIdAndUpdate(id, resto, { new: true });
         if (!usuario) {
             return res.status(400).json({
@@ -59,7 +26,7 @@ const userPut = async (req, res) => {
         }
 
         res.status(200).json({
-            msg: 'Usuario actualizado correctamente',
+            msg: 'Se actualizo el perfil',
             usuario,
         });
     } catch (error) {
@@ -69,9 +36,42 @@ const userPut = async (req, res) => {
         });
     }
 };
+
+
+
+
+const userDelete = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const usuario = await User.findById(id);
+
+        if (!usuario) {
+            return res.status(400).json({
+                msg: 'Usuario no existe'
+            });
+        }
+        const usuarioAutenticado = req.usuario;
+        if (usuarioAutenticado._id !== id || usuarioAutenticado.role !== 'STUDENT_ROLE') {
+            return res.status(403).json({
+                msg: 'Solo maestros pueden eliminar perfiles'
+            });
+        }
+        usuario.estado = false;
+        await usuario.save();
+
+        res.status(200).json({
+            msg: 'Se elimino el perfil',
+            usuario
+        });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            msg: 'Hable con el administrador'
+        });
+    }
+};
  
 module.exports = {
-
-    userDelete,
-    userPut
+    userPut,
+    userDelete
 }

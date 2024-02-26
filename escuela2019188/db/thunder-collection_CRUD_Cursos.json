@@ -1,0 +1,138 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CRUD_Cursos",
+    "dateExported": "2024-02-26T02:29:07.249Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "af35f640-dc2e-4928-b318-81f5fbb85c60",
+            "colId": "69171b5b-991c-4c71-b928-cdcd914e4b1f",
+            "containerId": "",
+            "name": "CrearCurso",
+            "url": "http://localhost:3000/api/courses",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-25T20:59:06.291Z",
+            "modified": "2024-02-26T02:15:18.099Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiZWQ4YjE4YjE3MWNjYzcxMTViNDAiLCJpYXQiOjE3MDg5MTIwMTksImV4cCI6MTcwODkxNTYxOX0.r2y9dwxLUOTujqAW_CuxJmPdDH1OmssbotquQM_ryyk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nameCourse\": \"Biologia I\",\n    \"descripcion\": \"Introduccion a la biologia\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a1e39680-f99d-451a-9e69-2d0838ac58c7",
+            "colId": "69171b5b-991c-4c71-b928-cdcd914e4b1f",
+            "containerId": "",
+            "name": "EditarCurso",
+            "url": "http://localhost:3000/api/courses/65dbef063734cb51390a9cca",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-02-25T20:59:06.293Z",
+            "modified": "2024-02-26T01:59:42.376Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiZWQ4YjE4YjE3MWNjYzcxMTViNDAiLCJpYXQiOjE3MDg5MTI3NzUsImV4cCI6MTcwODkxNjM3NX0.JYgJufZtW3wYbjtR7SWZGQFx5DhBEVHsEcZHm3nNgRQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nameCourse\": \"Algebra I\",\n    \"description\": \"Introduccion al algebra\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aafe5946-2188-4663-ac78-92d03bcb536c",
+            "colId": "69171b5b-991c-4c71-b928-cdcd914e4b1f",
+            "containerId": "",
+            "name": "EliminarCurso",
+            "url": "http://localhost:3000/api/courses/65dbef063734cb51390a9cca",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-25T20:59:06.294Z",
+            "modified": "2024-02-26T02:00:07.358Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiZWQ4YjE4YjE3MWNjYzcxMTViNDAiLCJpYXQiOjE3MDg5MTI3NzUsImV4cCI6MTcwODkxNjM3NX0.JYgJufZtW3wYbjtR7SWZGQFx5DhBEVHsEcZHm3nNgRQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f6626b0a-099d-428c-a0fc-9577a5a1db25",
+            "colId": "69171b5b-991c-4c71-b928-cdcd914e4b1f",
+            "containerId": "",
+            "name": "EntrarEnCursos",
+            "url": "http://localhost:3000/api/courses/students/65dbb7525f922d5e61513634/courses",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-25T20:59:06.295Z",
+            "modified": "2024-02-26T02:04:37.704Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiYjc1MjVmOTIyZDVlNjE1MTM2MzQiLCJpYXQiOjE3MDg5MTI5NjEsImV4cCI6MTcwODkxNjU2MX0.yZXOs6jtSv3Z0guRzod4KWVTG6Lo9rNh0syuDACg9jE"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"courseId\": \"65dbd6d606d8e7209185da40\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0bdb541d-cc58-40bd-87ba-f20623b44567",
+            "colId": "69171b5b-991c-4c71-b928-cdcd914e4b1f",
+            "containerId": "",
+            "name": "CursosEstudiante",
+            "url": "http://localhost:3000/api/courses/students/65dbb7525f922d5e61513634/courses",
+            "method": "GET",
+            "sortNum": 52500,
+            "created": "2024-02-25T20:59:06.296Z",
+            "modified": "2024-02-26T02:09:01.507Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiYjc1MjVmOTIyZDVlNjE1MTM2MzQiLCJpYXQiOjE3MDg5MTI5NjEsImV4cCI6MTcwODkxNjU2MX0.yZXOs6jtSv3Z0guRzod4KWVTG6Lo9rNh0syuDACg9jE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "35902a00-0296-4f00-8bab-d8a564ea4957",
+            "colId": "69171b5b-991c-4c71-b928-cdcd914e4b1f",
+            "containerId": "",
+            "name": "CursosProfesor",
+            "url": "http://localhost:3000/api/courses/teachers/65dbed8b18b171ccc7115b40/courses",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2024-02-25T20:59:06.292Z",
+            "modified": "2024-02-26T02:11:57.630Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRiZWQ4YjE4YjE3MWNjYzcxMTViNDAiLCJpYXQiOjE3MDg5MTM1MDMsImV4cCI6MTcwODkxNzEwM30.MzJ9DCt1Vb6mYz3UgZlkBHUCqmd7XbV9vecyQg7GEX4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

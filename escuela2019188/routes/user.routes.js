@@ -9,6 +9,7 @@ const {userDelete, userPut } = require('../controllers/user.controller');
 
 const router = Router();
 
+
 router.delete("/:id", [
     validarJWT,
     tieneRole('STUDENT_ROLE', 'TEACHER_ROLE'),
@@ -24,5 +25,9 @@ router.put("/:id", [
     check('id'),
     validarCampos
 ], userPut);
+
+
+
+
 
 module.exports = router;
